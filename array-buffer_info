@@ -1,0 +1,7 @@
+import array
+arr=array.array('i',[1,2,3,4]) # i denotes the data type of the elements in array which is integer.
+for i in range(0,4):
+  print(arr[i],end=' ')
+print("\n",arr.typecode)
+print(arr.itemsize)
+print(arr.buffer_info())
