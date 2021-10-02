@@ -1,0 +1,13 @@
+print("Reversing an array:")
+n=int(input("Enter the total number of elements in your array:"))
+li=[]
+for i in range(0,n):
+  num=int(input())
+  li.append(num)
+for i in range(0,n//2):
+  temp=li[n-i-1]
+  li[n-i-1]=li[i]
+  li[i]=temp
+print("Reversed array")
+for i in range(0,len(li)):
+  print(li[i])
